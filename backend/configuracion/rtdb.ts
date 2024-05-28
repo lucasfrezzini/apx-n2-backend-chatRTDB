@@ -15,4 +15,5 @@ const firebaseConfig = {
 const app = initializeApp(firebaseConfig);
 
 const rtdb = getDatabase(app);
+console.log("Conexion a RTFB establecida.");
 export { rtdb };
