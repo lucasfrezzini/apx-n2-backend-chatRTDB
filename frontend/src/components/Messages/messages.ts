@@ -5,6 +5,7 @@ class Messages extends HTMLElement {
       height:calc(100vh - 282px);
       display: flex;
       flex-direction: column;
+      justify-content: end;
       gap:10px;
       overflow-y: scroll;
     }
@@ -19,8 +20,9 @@ class Messages extends HTMLElement {
     }
 
     .message h6{
-      color: var(--color-gray);
+      color: var(--color-black);
       margin: 0px 0 2px 5px;
+      font-size: 15px;
     }
     .message p {
       display: inline-block;
@@ -29,11 +31,21 @@ class Messages extends HTMLElement {
       padding:5px 10px;
       border-radius: 5px;
       max-width: 85%;
+      display: flex;
+      flex-direction: column;
+      align-items: end;
+      gap: 4px;
     }
     
     .message-right p {
       background-color: var(--color-green);
       text-align: right;
+      margin-right: 10px;
+    }
+
+    .message p span {
+      font-size: 12px;
+      font-weight: bold;
     }
     `;
   }
@@ -47,82 +59,18 @@ class Messages extends HTMLElement {
     <section id="messages">
       <div class="message message-left">
         <h6>Pau</h6>
-        <p>omo dijimos, la principal característica de una BD realtime es que varios clientes reciben al instante las actualizaciones del servidor.</p>
+        <p>1...Como dijimos, la principal característica de una BD realtime es que varios clientes reciben al instante las actualizaciones del servidor.<span>17:45h</span></p>
       </div>
       <div class="message message-right">
         <h6 hidden>Tano</h6>
-        <p>Hola</p>
+        <p>Hola como estás vos? Todo en orden? Espero que andes muy bien y te encuentres mucho mejor desde la ultima vez que hablamos.<span>17:45h</span></p>
       </div>
       <div class="message message-left">
         <h6>Pau</h6>
-        <p>omo dijimos, la principal característica de una BD realtime es que varios clientes reciben al instante las actualizaciones del servidor.</p>
-      </div>
-      <div class="message message-right">
+        <p>Como dijimos, la principal característica de una BD realtime es que varios clientes reciben al instante las actualizaciones del servidor.<span>17:45h</span></p>
+      </div><div class="message message-right">
         <h6 hidden>Tano</h6>
-        <p>Hola</p>
-      </div><div class="message message-left">
-        <h6>Pau</h6>
-        <p>omo dijimos, la principal característica de una BD realtime es que varios clientes reciben al instante las actualizaciones del servidor.</p>
-      </div>
-      <div class="message message-right">
-        <h6 hidden>Tano</h6>
-        <p>Hola</p>
-      </div><div class="message message-left">
-        <h6>Pau</h6>
-        <p>omo dijimos, la principal característica de una BD realtime es que varios clientes reciben al instante las actualizaciones del servidor.</p>
-      </div>
-      <div class="message message-right">
-        <h6 hidden>Tano</h6>
-        <p>Hola</p>
-      </div><div class="message message-left">
-        <h6>Pau</h6>
-        <p>omo dijimos, la principal característica de una BD realtime es que varios clientes reciben al instante las actualizaciones del servidor.</p>
-      </div>
-      <div class="message message-right">
-        <h6 hidden>Tano</h6>
-        <p>Hola</p>
-      </div><div class="message message-left">
-        <h6>Pau</h6>
-        <p>omo dijimos, la principal característica de una BD realtime es que varios clientes reciben al instante las actualizaciones del servidor.</p>
-      </div>
-      <div class="message message-right">
-        <h6 hidden>Tano</h6>
-        <p>Hola</p>
-      </div><div class="message message-left">
-        <h6>Pau</h6>
-        <p>omo dijimos, la principal característica de una BD realtime es que varios clientes reciben al instante las actualizaciones del servidor.</p>
-      </div>
-      <div class="message message-right">
-        <h6 hidden>Tano</h6>
-        <p>Hola</p>
-      </div><div class="message message-left">
-        <h6>Pau</h6>
-        <p>omo dijimos, la principal característica de una BD realtime es que varios clientes reciben al instante las actualizaciones del servidor.</p>
-      </div>
-      <div class="message message-right">
-        <h6 hidden>Tano</h6>
-        <p>Hola</p>
-      </div><div class="message message-left">
-        <h6>Pau</h6>
-        <p>omo dijimos, la principal característica de una BD realtime es que varios clientes reciben al instante las actualizaciones del servidor.</p>
-      </div>
-      <div class="message message-right">
-        <h6 hidden>Tano</h6>
-        <p>Hola</p>
-      </div><div class="message message-left">
-        <h6>Pau</h6>
-        <p>omo dijimos, la principal característica de una BD realtime es que varios clientes reciben al instante las actualizaciones del servidor.</p>
-      </div>
-      <div class="message message-right">
-        <h6 hidden>Tano</h6>
-        <p>Hola</p>
-      </div><div class="message message-left">
-        <h6>Pau</h6>
-        <p>omo dijimos, la principal característica de una BD realtime es que varios clientes reciben al instante las actualizaciones del servidor.</p>
-      </div>
-      <div class="message message-right">
-        <h6 hidden>Tano</h6>
-        <p>Hola</p>
+        <p>Hola como estás vos? Todo en orden? Espero que andes muy bien y te encuentres mucho mejor desde la ultima vez que hablamos.<span>17:45h</span></p>
       </div>
     </section>
     `;

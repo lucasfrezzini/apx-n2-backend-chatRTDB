@@ -15,6 +15,7 @@
   --color-blue: #9cbbe9;
   --color-gray: #d8d8d8;
   --color-green: #b9e97c;
+  --color-black: #161616;
 }
 * {
   box-sizing: border-box;
